@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+</head>
+<body>
+<h1><%= title %></h1>
+
+<ul>
+    <% for (let itemNews of news){ %>
+        <li>
+            <%= itemNews.id %> -
+           <a href='/news/<%= itemNews.id %>'> <%= itemNews.title %></a>
+        </li>
+    <% }; %>
+</ul>
+
+</body>
+</html>
